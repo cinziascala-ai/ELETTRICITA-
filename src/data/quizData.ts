@@ -1,0 +1,272 @@
+import { QuizQuestion } from '../types/lesson';
+
+export const QUIZ_QUESTIONS: QuizQuestion[] = [
+  // LEZIONE 1: ELETTROSTATICA, CORRENTE, GRANDEZZE, CIRCUITI, SICUREZZA
+  {
+    id: 'q1',
+    lessonId: 'lesson-1',
+    topic: 'Struttura dell\'Atomo',
+    difficulty: 'base',
+    question: 'Quali particelle dell\'atomo possiedono carica elettrica negativa e si muovono nei metalli generando la corrente?',
+    options: ['I protoni nel nucleo', 'I neutroni privi di carica', 'Gli elettroni esterni', 'I nuclei atomici'],
+    correctIndex: 2,
+    explanation: 'Gli elettroni hanno carica negativa (-) e nei materiali conduttori metallici (come il rame) sono liberi di spostarsi tra gli atomi, creando la corrente elettrica.',
+  },
+  {
+    id: 'q2',
+    lessonId: 'lesson-1',
+    topic: 'Materiali Conduttori e Isolanti',
+    difficulty: 'base',
+    question: 'Quale tra questi materiali è un isolante elettrico ed è usato per rivestire i cavi?',
+    options: ['Rame', 'Plastica / Gomma (PVC)', 'Alluminio', 'Ferro'],
+    correctIndex: 1,
+    explanation: 'La plastica (PVC) e la gomma sono ottimi isolanti perché i loro elettroni sono legati saldamente al nucleo e non possono muoversi, proteggendoci dal contatto diretto.',
+  },
+  {
+    id: 'q3',
+    lessonId: 'lesson-1',
+    topic: 'Unità di Misura della Tensione',
+    difficulty: 'base',
+    question: 'In quale unità di misura si esprime la Tensione (differenza di potenziale)?',
+    options: ['Ampere (A)', 'Ohm (Ω)', 'Watt (W)', 'Volt (V)'],
+    correctIndex: 3,
+    explanation: 'La Tensione si misura in Volt (V), in onore dello scienziato italiano Alessandro Volta, inventore della prima pila elettrochimica nel 1799.',
+  },
+  {
+    id: 'q4',
+    lessonId: 'lesson-1',
+    topic: 'Prima Legge di Ohm',
+    difficulty: 'intermedio',
+    question: 'Secondo la Prima Legge di Ohm, se la tensione (V) è 12 Volt e la resistenza (R) è 4 Ohm, qual è la corrente (I)?',
+    options: ['48 Ampere', '3 Ampere', '8 Ampere', '0,33 Ampere'],
+    correctIndex: 1,
+    explanation: 'La formula è I = V / R. Quindi I = 12 V / 4 Ω = 3 Ampere. Bravo/a!',
+  },
+  {
+    id: 'q5',
+    lessonId: 'lesson-1',
+    topic: 'Analogia Idraulica',
+    difficulty: 'base',
+    question: 'Nell\'analogia idraulica, a che cosa corrisponde la Resistenza Elettrica (Ohm)?',
+    options: [
+      'Al dislivello tra i due serbatoi d\'acqua',
+      'Alla portata d\'acqua (litri al secondo)',
+      'Alla strozzatura o restringimento del tubo che frena l\'acqua',
+      'Alla pompa che spinge l\'acqua in alto'
+    ],
+    correctIndex: 2,
+    explanation: 'Proprio così! La resistenza è l\'ostacolo fisico (il tubo stretto o il rubinetto semi-chiuso) che riduce il passaggio del flusso d\'acqua.',
+  },
+  {
+    id: 'q6',
+    lessonId: 'lesson-1',
+    topic: 'Circuiti in Serie e in Parallelo',
+    difficulty: 'intermedio',
+    question: 'Perché nelle nostre case tutti i punti luce e gli elettrodomestici sono collegati in PARALLELO e non in serie?',
+    options: [
+      'Perché così se si spegne o si rompe un elettrodomestico, tutti gli altri continuano a funzionare regolarmente',
+      'Perché in serie i cavi costerebbero troppo',
+      'Perché in serie la corrente salirebbe a valori infiniti',
+      'Perché la legge vieta i circuiti in serie solo a scuola'
+    ],
+    correctIndex: 0,
+    explanation: 'In parallelo ogni ramo è indipendente e riceve tutti i 230 V della rete. In serie, spegnendo una lampadina si spegnerebbe istantaneamente tutta la casa!',
+  },
+  {
+    id: 'q7',
+    lessonId: 'lesson-1',
+    topic: 'Potenza ed Energia',
+    difficulty: 'intermedio',
+    question: 'Se un forno elettrico da 2000 W (2 kW) resta acceso per 2 ore, quanta energia consuma?',
+    options: ['2000 J', '4 kWh', '1 kWh', '4000 W'],
+    correctIndex: 1,
+    explanation: 'Energia = Potenza × Tempo. E = 2 kW × 2 h = 4 kWh (chilowattora).',
+  },
+  {
+    id: 'q8',
+    lessonId: 'lesson-1',
+    topic: 'Sicurezza: Il Salvavita',
+    difficulty: 'intermedio',
+    question: 'Qual è il compito principale dell\'interruttore DIFFERENZIALE (detto comunemente "Salvavita")?',
+    options: [
+      'Aumentare la velocità dei computer collegati alla presa',
+      'Rilevare dispersioni pericolose di corrente verso terra o verso una persona e staccare l\'impianto in millisecondi',
+      'Misurare quanti euro dobbiamo pagare a fine mese all\'azienda elettrica',
+      'Ricaricare le batterie scariche della casa'
+    ],
+    correctIndex: 1,
+    explanation: 'Il salvavita confronta la corrente in entrata con quella in uscita. Se scappa anche solo una minima dispersione (es. 30 mA) stacca la tensione all\'istante!',
+  },
+  {
+    id: 'q9',
+    lessonId: 'lesson-1',
+    topic: 'Sicurezza Domestica',
+    difficulty: 'base',
+    question: 'Perché è estremamente pericoloso toccare apparecchi elettrici o prese con le mani o i piedi bagnati?',
+    options: [
+      'Perché l\'acqua e il sudore salato riducono drasticamente la resistenza del corpo, lasciando passare una scarica elettrica mortale',
+      'Perché l\'acqua spegne il contatore della luce',
+      'Perché l\'acqua rovina solo la carrozzeria dell\'apparecchio',
+      'Perché l\'acqua rende la gomma isolante più conduttiva'
+    ],
+    correctIndex: 0,
+    explanation: 'La pelle asciutta ha un\'alta resistenza (migliaia di Ohm), ma bagnata con sali la resistenza crolla a poche centinaia di Ohm: la corrente che attraversa il cuore può diventare letale.',
+  },
+  {
+    id: 'q10',
+    lessonId: 'lesson-1',
+    topic: 'Strumenti di Misura',
+    difficulty: 'sfida',
+    question: 'Come deve essere inserito un Voltmetro nel circuito per misurare la tensione tra due punti?',
+    options: [
+      'Sempre e solo in SERIE, interrompendo il filo conduttore',
+      'Sempre e solo in PARALLELO, collegando i due puntali ai capi del componente',
+      'Attaccato direttamente al polo di terra',
+      'A circuito spento senza alcuna corrente'
+    ],
+    correctIndex: 1,
+    explanation: 'Il voltmetro misura la differenza di potenziale TRA DUE PUNTI, quindi si collega in parallelo. L\'amperometro invece si collega in serie per farsi attraversare dalla corrente.',
+  },
+
+  // LEZIONE 2: MAGNETISMO, ELETTROMAGNETISMO, MOTORI, APPLICAZIONI
+  {
+    id: 'q11',
+    lessonId: 'lesson-2',
+    topic: 'Poli Magnetici',
+    difficulty: 'base',
+    question: 'Che cosa succede se avviciniamo il Polo Nord di una calamita al Polo Nord di un\'altra calamita?',
+    options: [
+      'Si attraggono con molta forza',
+      'Si respingono a vicenda',
+      'Si annullano diventando pezzi di ferro normale',
+      'Emettono una luce blu fluorescente'
+    ],
+    correctIndex: 1,
+    explanation: 'Regola fondamentale: poli magnetici dello stesso tipo (Nord-Nord o Sud-Sud) si respingono; poli opposti (Nord-Sud) si attraggono!',
+  },
+  {
+    id: 'q12',
+    lessonId: 'lesson-2',
+    topic: 'Inseparabilità dei Poli',
+    difficulty: 'intermedio',
+    question: 'Se tagli a metà con una sega una barra magnetica con polo Nord e polo Sud, cosa ottieni?',
+    options: [
+      'Un pezzo con solo polo Nord e un pezzo con solo polo Sud',
+      'Due pezzi di ferro completamente smagnetizzati',
+      'Due calamite complete, ciascuna con il proprio polo Nord e il proprio polo Sud',
+      'Una carica elettrica positiva e una negativa'
+    ],
+    correctIndex: 2,
+    explanation: 'I poli magnetici sono inseparabili! Tagliando a metà un magnete si formano istantaneamente due nuove calamite complete. Non esiste il monopolo magnetico.',
+  },
+  {
+    id: 'q13',
+    lessonId: 'lesson-2',
+    topic: 'La Terra come Magnete',
+    difficulty: 'base',
+    question: 'Perché l\'ago di una bussola indica sempre la direzione del Nord geografico?',
+    options: [
+      'Perché il sole la riscalda dal lato del nord',
+      'Perché l\'ago sente la gravità delle montagne settentrionali',
+      'Perché la Terra si comporta come un enorme magnete e l\'ago magnetico si allinea lungo le sue linee di forza',
+      'Perché la punta dell\'ago è più pesante'
+    ],
+    correctIndex: 2,
+    explanation: 'Il nucleo terrestre fluido in rotazione crea un gigantesco campo magnetico. L\'ago della bussola è una calamita libera di ruotare che si allinea alle linee di campo del pianeta.',
+  },
+  {
+    id: 'q14',
+    lessonId: 'lesson-2',
+    topic: 'Esperimento di Oersted',
+    difficulty: 'intermedio',
+    question: 'Cosa dimostrò Hans Christian Oersted nel 1820 avvicinando una bussola a un filo percorso da corrente?',
+    options: [
+      'Che la corrente elettrica scalda il filo fino a fonderlo',
+      'Che una corrente elettrica genera un campo magnetico invisibile attorno al filo',
+      'Che le calamite attirano il rame',
+      'Che la corrente elettrica smagnetizza le bussole per sempre'
+    ],
+    correctIndex: 1,
+    explanation: 'Oersted dimostrò per la prima volta che la corrente elettrica genera magnetismo, aprendo le porte all\'Elettromagnetismo moderno!',
+  },
+  {
+    id: 'q15',
+    lessonId: 'lesson-2',
+    topic: 'Induzione di Faraday',
+    difficulty: 'intermedio',
+    question: 'Cosa accade secondo la scoperta di Michael Faraday (1831) se muovi una calamita avanti e indietro dentro una bobina di rame?',
+    options: [
+      'La calamita perde il suo magnetismo',
+      'Si genera spontaneamente una corrente elettrica indotta nella bobina di rame',
+      'La bobina si ghiaccia all\'istante',
+      'Non succede nulla perché il rame non è magnetico'
+    ],
+    correctIndex: 1,
+    explanation: 'È l\'Induzione Elettromagnetica! Il movimento relativo tra campo magnetico e conduttore genera corrente. È il principio su cui si basano tutti gli alternatori del mondo.',
+  },
+  {
+    id: 'q16',
+    lessonId: 'lesson-2',
+    topic: 'Costruzione dell\'Elettromagnete',
+    difficulty: 'base',
+    question: 'Come si può aumentare la forza di attrazione di un elettromagnete (bobina con nucleo di ferro)?',
+    options: [
+      'Diminuendo la corrente e usando meno filo',
+      'Aumentando il numero di spire del filo e aumentando l\'intensità della corrente',
+      'Togliendo il nucleo di ferro e usando legno',
+      'Mettendolo nel frigorifero'
+    ],
+    correctIndex: 1,
+    explanation: 'La forza di un elettromagnete è proporzionale al numero di spire avvolte (N) e alla corrente che vi scorre (I): più spire e più Ampere = campo magnetico più forte!',
+  },
+  {
+    id: 'q17',
+    lessonId: 'lesson-2',
+    topic: 'Il Motore Elettrico',
+    difficulty: 'intermedio',
+    question: 'Qual è la trasformazione energetica fondamentale compiuta da un Motore Elettrico?',
+    options: [
+      'Da Energia Meccanica ad Energia Elettrica',
+      'Da Energia Elettrica ad Energia Meccanica di rotazione',
+      'Da Energia Chimica ad Energia Nucleare',
+      'Da Energia Luminosa ad Energia Termica'
+    ],
+    correctIndex: 1,
+    explanation: 'Il motore elettrico riceve energia elettrica (dalla rete o da batterie) e la trasforma in energia meccanica, facendo girare un albero rotore.',
+  },
+  {
+    id: 'q18',
+    lessonId: 'lesson-2',
+    topic: 'Alternatori e Centrali Elettriche',
+    difficulty: 'base',
+    question: 'Quale macchina elettrica trasforma l\'energia meccanica di una turbina idraulica o eolica in energia elettrica per la rete?',
+    options: ['Un motore termico', 'Un alternatore', 'Un condensatore', 'Un voltmetro'],
+    correctIndex: 1,
+    explanation: 'L\'alternatore (o la dinamo) compie la trasformazione inversa del motore: fa ruotare bobine o magneti producendo corrente elettrica.',
+  },
+  {
+    id: 'q19',
+    lessonId: 'lesson-2',
+    topic: 'Treni Maglev a Levitazione Magnetica',
+    difficulty: 'sfida',
+    question: 'Perché i treni Maglev possono raggiungere velocità superiori a 600 km/h consumando meno energia per attrito?',
+    options: [
+      'Perché usano ali di aeroplano per volare in quota',
+      'Perché levitano sospesi sopra le rotaie grazie a forze magnetiche, azzerando l\'attrito ruota-binario',
+      'Perché scivolano su ghiaccio artificiale continuo',
+      'Perché sono trainati da razzi a idrogeno'
+    ],
+    correctIndex: 1,
+    explanation: 'La levitazione magnetica elimina il contatto fisico tra treno e binario: non essendoci attrito volvente delle ruote, resta solo la resistenza dell\'aria!',
+  },
+  {
+    id: 'q20',
+    lessonId: 'lesson-2',
+    topic: 'Unità di Misura del Campo Magnetico',
+    difficulty: 'sfida',
+    question: 'Nel Sistema Internazionale, qual è l\'unità di misura dell\'induzione del campo magnetico (B)?',
+    options: ['Coulomb (C)', 'Newton (N)', 'Tesla (T)', 'Joule (J)'],
+    correctIndex: 2,
+    explanation: 'Il Tesla (simbolo T) è l\'unità di misura del campo magnetico nel SI, dedicato al visionario Nikola Tesla.',
+  },
+];

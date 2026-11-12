@@ -1,0 +1,6 @@
+{
+  "name": "Elettricità e Magnetismo - Lezioni di Tecnologia",
+  "description": "Due lezioni multimediali, approfondimenti, percorso facilitato DSA/BES, simulatori interattivi di circuiti e magnetismo, e quiz per la scuola secondaria di primo grado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
